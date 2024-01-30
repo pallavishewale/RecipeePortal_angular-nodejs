@@ -1,0 +1,26 @@
+
+
+  <mat-card class="recipe-card">
+    <div class="close-button">
+        <button mat-icon-button (click)="closeCard()">
+          <mat-icon>close</mat-icon>
+        </button>
+      </div>
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{ recipe.recipee_name }}</mat-card-title>
+      <mat-card-subtitle>By {{ recipe.fullname }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p><strong>Username:</strong> {{ recipe.username }}</p>
+      <p><strong>Email:</strong> {{ recipe.email }}</p>
+      <p><strong>Ingredients:</strong></p>
+      <ul class="ingredient-list">
+        <li *ngFor="let ingredient of recipe.ingredients">{{ ingredient }}</li>
+      </ul>
+      <p><strong>Description:</strong> {{ recipe.description }}</p>
+      <p><strong>Serve:</strong> {{ recipe.serve }}</p>
+      <p><strong>Type:</strong> {{ recipe.type }}</p>
+    </mat-card-content>
+  </mat-card>
+  

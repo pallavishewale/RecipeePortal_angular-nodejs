@@ -1,0 +1,32 @@
+<mat-toolbar color="primary">
+    <span class="app-heading">Recipee Sharing Community</span>
+    <span class="spacer"></span>
+<div class="nav-content">
+
+    <a mat-button routerLink="/home" >
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </a>
+    <a mat-button routerLink="add-recipe" routerLinkActive="active-link">
+      <mat-icon>add_circle</mat-icon>
+      <span>Add Recipe</span>
+    </a>
+    <a mat-button routerLink="show-recipes" routerLinkActive="active-link">
+      <mat-icon>list</mat-icon>
+      <span>Show Recipes</span>
+    </a>
+    <a mat-button routerLink="my-recipes" routerLinkActive="active-link">
+      <mat-icon>folder</mat-icon>
+      <span>My Recipes</span>
+    </a>
+    <a mat-icon-button routerLink="">
+      <mat-icon>exit_to_app</mat-icon>
+      <span (click)="logout()">Logout</span>
+    </a>
+    </div>
+  </mat-toolbar>
+  <div class="main-body">
+<div class="container " >
+  <router-outlet> </router-outlet>
+  </div>
+  </div>

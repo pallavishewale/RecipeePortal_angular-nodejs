@@ -1,0 +1,82 @@
+table th {
+  padding: 30px;
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* Data row styling */
+  table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    padding: 10px;
+    font-size:large;
+
+
+  }
+  a{
+    text-decoration: none;
+    color: blue;
+  }
+  a:hover {
+    color: red; /* Change the color to your desired hover color */
+  }
+  button{
+    margin: 3px;
+     height: 30px;
+     width: 70px;
+  }
+
+
+  /* Style for table headings */
+mat-header-cell {
+font-weight: bold;
+background-color: #2980b9;
+padding: 10px;
+text-align: center;
+color: black;
+
+}
+
+/* Style for table cells */
+.mat-cell {
+padding: 10px;
+text-align: center;
+font-size: medium;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Style for buttons */
+button {
+margin-right: 5px;
+background-color: #62a3ce;
+color: #ffffff;
+border: none;
+padding: 5px 10px;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+button:hover {
+background-color: #2980b9;
+}
+
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+  }
+  
+  .pagination button {
+    margin: 0 8px;
+  }
+  
+  .pagination span {
+    margin: 0 16px;
+  }
+  
